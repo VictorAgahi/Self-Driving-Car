@@ -5,16 +5,14 @@ class Controls{
         this.right=false;
         this.reverse=false;
 
-        switch (type)
-        {
+        switch(type){
             case "KEYS":
                 this.#addKeyboardListeners();
                 break;
             case "DUMMY":
-                this.forward = true;
+                this.forward=true;
                 break;
         }
-
     }
 
     #addKeyboardListeners(){
